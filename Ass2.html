@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0"/>
+    <title>University of Central Punjab</title>
+</head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            background-color: rgb(230, 226, 222);
+        }
+        .navbar{
+            background-color: rgb(90, 90, 211);
+            width: 100%;
+            height: 80px;
+            border-radius: 500x;
+        }
+        .menuItems{
+            justify-content: center;
+        
+        }
+        .menuItems ul{
+           display:flex;
+           justify-content: center;
+           align-items:center;
+           
+        }
+        .menuItems li{
+            font-size: 25px;
+            list-style-type: none;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 25px;
+        }
+        .menuItems li a{
+           
+            color: white;
+        }
+        .menuItems li a:hover{
+            text-decoration: none;
+            color: rgb(196, 63, 63);
+        }
+        .banner{
+            width: 100%;
+            height: 600px;
+            background-image: url(bannerImage.png);  
+        }
+        .sndbanner{
+            background-color: rgb(90, 90, 211);
+            color: rgb(255, 255, 255);
+            padding: 80px;
+            text-align: left;
+            margin-top: 35px;  
+        }
+        .chairmn{
+            margin-left: 150px ;
+            font-size: 60px;
+        }
+        .imagech{
+            max-width: 35%; /* Adjust as needed */
+            height: auto;
+            border-radius: 50px;
+            margin-left: 63%;
+            margin-top: -190px;
+            justify-content: right;
+        
+        }
+        .boxes{
+            display: flex;
+            margin-top: 100px;
+        }
+        .box {
+            width: 260px;
+            height: 320px;
+            border: 2px solid rgb(65, 45, 177);
+            padding: 10px;
+            margin: 10px;
+            margin-left: 170px;
+        }
+        .boxe{
+            width: 260px;
+            height: 320px;
+            border: 2px solid rgb(65, 45, 177);
+            padding: 10px;
+            margin: 10px;
+        }
+        .boxee{
+            width: 260px;
+            height: 320px;
+            border: 2px solid rgb(65, 45, 177);
+            padding: 10px;
+            margin: 10px;
+        }
+        .masec{
+            margin-left: 260px;
+            font-size: 65px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(65, 45, 177);;
+        }
+        .imagemasjid{
+            max-width: 60%;
+            height: auto;
+            margin-left: 210px;
+        }
+        .secmasjid{
+            display: flex;
+            margin-top: 140px;
+        }
+        .boxeei{
+            width: 800px;
+            height: 410px;
+            border: 2px solid rgb(65, 45, 177);
+            padding: 10px;
+            margin: 10px;
+            margin-top: 30px;
+            margin-right: 300px;
+        }
+        .feedbackForm{
+            justify-content: center;
+        }
+        .javahead{
+            margin-left: 230px;
+            font-size: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(65, 45, 177);
+        }
+        .search-container {
+            display: inline;
+            justify-content: center;
+            margin-left: 230px;
+            margin-top: 80px;
+        }
+
+#first {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid rgb(65, 45, 177);
+    border-radius: 2px;
+    margin-top: 40px;
+    width: 340px;
+    background-color: transparent;
+}
+#last{
+    margin-left: -200px;
+    padding: 8px;
+    width: 340px;
+    font-size: 16px;
+    border: 2px solid rgb(65, 45, 177);
+    border-radius: 2px;
+    margin-top: 40px;
+    background-color: transparent;
+}
+.search-containerr {
+    
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: 20px;
+}
+#email{
+    
+    padding: 8px;
+    width: 732px;
+    font-size: 16px;
+    border: 2px solid rgb(65, 45, 177);
+    background-color: transparent;
+    border-radius: 2px;
+    
+}
+.search-containerrr {
+    
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: 20px;
+}
+#feedbck{
+    
+    background-color: transparent;
+    width: 745px;
+    height: 200px;
+    font-size: 16px;
+    border: 2px solid rgb(65, 45, 177);
+    border-radius: 2px;  
+}
+
+#btn{
+    padding: 12px;
+    margin: 80px;
+    margin-left: 41%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+
+    background-color: rgb(1, 1, 179);
+    color: #fdfbfb;
+    
+}
+#foothead{
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 68px;
+    margin-left: 390px;
+    margin-top: 30px;
+    
+}
+footer {
+            background-color: #2a1e57;
+            color: #fdfbfb;
+            height: auto;
+            width: 100vw; 
+            margin-bottom: 40px;  
+        }
+        .menuItemss{
+            justify-content: left;
+        
+        }
+        .menuItemss ul{
+           display:inline;
+           justify-content: left;
+           
+           
+        }
+        .menuItemss li{
+            font-size: 25px;
+            list-style-type: none;
+            
+            margin-left: 190px;
+            margin-top: 25px;
+        }
+        .menuItemss li a{
+           
+            color: white;
+        }
+        .allmenu{
+            display: flex;
+            margin-top: 60px;
+        }
+        #lastimg{
+            width: 40px;
+            margin-left: 190px;
+            background-color: aliceblue;
+            border-radius: 32px;
+        }
+        #logo{
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        #headbox{
+            margin-left: 50px;
+            font-size: 30px;
+            margin-top: 14px;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #2a1e57;
+        }
+        #headboxx{
+            margin-left: 90px;
+            font-size: 30px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #2a1e57;
+        }
+        
+
+
+
+        
+ </style>
+
+
+<body>
+<div class="main">
+    
+        <div class="navbar">
+           <div class="logo">  </div>
+              
+           <div class="menuItems">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>  
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Locations</a></li>
+            </ul>
+           </div>
+        </div>  
+        <div class="banner"></div>
+        <div class="sndbanner">
+            <h1 class="chairmn">The Importance</h1>
+            <h1 class="chairmn">of the 10 Days of</h1>
+            <h1 class="chairmn">Dull Hijjah</h1>
+            
+                <img class="imagech" src="cloud.png" alt="clouud">
+          </div>
+          <div class="boxes">
+            <div class="box">
+                <img src="section3logo1.png" alt="logo1" id="logo">
+                <h6 id="headbox">Lorem Ispum</h6>
+                Lorem Ispum dolor sit amet,consectetur
+                adipisc ing elit,sed do elusmod tempor inci
+                didunut ut lahore et doloremaga eliqua,
+                quis ispum sus pendise ultrices gradiva
+                    risus commoda ever
+              </div>
+              <div class="boxe">
+                <img src="section3logo2.png" alt="logo1" id="logo">
+                <h6 id="headbox">Lorem Ispum</h6>
+                Lorem Ispum dolor sit amet,consectetur
+                adipisc ing elit,sed do elusmod tempor inci
+                didunut ut lahore et doloremaga eliqua,
+                quis ispum sus pendise ultrices gradiva
+                    risus commoda ever
+              </div>
+              <div class="boxee">
+                <img src="section3logo3.png" alt="logo1" id="logo">
+                <h6 id="headbox">Lorem Ispum</h6>
+                Lorem Ispum dolor sit amet,consectetur
+                adipisc ing elit,sed do elusmod tempor inci
+                didunut ut lahore et doloremaga eliqua,
+                quis ispum sus pendise ultrices gradiva
+                    risus commoda ever
+              </div>
+          </div>
+          <div class="secmasjid">
+            <div>
+                <h1 class="masec">This Year's</h2>
+                <h1 class="masec">Dull Hijjah</h1>
+                <img class="imagemasjid" src="section4Mosque.png" alt="masjid">
+            </div>
+            <div class="boxeei">
+                <h6 id="headboxx">Salaah</h6>
+                Lorem Ispum dolor sit amet,consectetur
+                adipisc ing elit,sed do elusmod tempor inci
+                didunut ut lahore et doloremaga eliqua,
+                quis ispum sus pendise ultrices gradiva
+                    risus commoda ever
+                    <h6 id="headboxx">Fasting</h6>
+                    Lorem Ispum dolor sit amet,consectetur
+                    adipisc ing elit,sed do elusmod tempor inci
+                    didunut ut lahore et doloremaga eliqua,
+                    quis ispum sus pendise ultrices gradiva
+                        risus commoda ever
+                        <h6 id="headboxx">Qur'aan</h6>
+                        Lorem Ispum dolor sit amet,consectetur
+                        adipisc ing elit,sed do elusmod tempor inci
+                        didunut ut lahore et doloremaga eliqua,
+                        quis ispum sus pendise ultrices gradiva
+                            risus commoda ever
+            </div>
+          </div>
+
+          <div class="feedbackForm">
+            <div class="heading">
+                <h3 class="javahead">Register to our Newsletter!</h1>
+            </div>
+            <div>
+                <div class="search-container">
+                    <input type="text" id="first" placeholder="First Name*" required>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="last" placeholder="Last Name*" required>
+                </div>
+            </div>
+            
+                <div class="search-containerr">
+                    <input type="text" id="email" placeholder="Email Subject*" required>
+                </div>
+
+                <div class="search-containerrr">
+                    <input type="text" id="feedbck" placeholder="Write something here....." required>
+                </div>
+                <div class="button">
+                    <button type="submit" id="btn" >SUBMIT EMAIL</button>
+                </div>
+
+          </div>
+          <div id="feedback"></div>
+          <footer>
+            <h5 id="foothead">Dhul Hijjah</h5>
+            <div class="allmenu">
+                <div class="menuItemss">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">What is It?</a></li>  
+                        <li><a href="#">Article</a></li>
+                    </ul>
+                </div>
+
+                <div class="menuItemss">
+                    <ul>
+                        
+                        <li><a href="#">About</a></li>  
+                        <li><a href="#">Its Importance</a></li>
+                        <li><a href="#">The Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="menuItemss">
+                    <ul>  
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">The 10 Days</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <img src="socialMediaicons.png" alt="last" id="lastimg">
+            </div>
+          </footer>
+          
+</div>  
+
+
+<script>
+    document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get input values
+        var firstName = document.getElementById("first").value;
+        var lastName = document.getElementById("last").value;
+        var email = document.getElementById("email").value;
+        var feedbck = document.getElementById("feedbck").value;
+
+        // Display feedback
+        var feedbackElement = document.getElementById("feedback");
+        feedbackElement.innerHTML = "<h2>Feedback Received:</h2>" +
+            "<p>First Name: " + firstName + "</p>" +
+            "<p>Last Name: " + lastName + "</p>" + 
+            "<p>Email: " + email + "</p>" +
+            "<p>Feedback: " + feedbck + "</p>";
+
+    });
+</script>
+</body>
+
+</html>
